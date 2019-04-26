@@ -1,0 +1,66 @@
+
+<div class="container">
+  
+  <div class="row">
+    
+    <div class="col-md-12"> 
+      
+      <div class="panel">
+        <div class="panel-body">
+          
+        
+         <div class="row">
+             <!-- <form name="addproducts"> -->
+                <form (ngSubmit)="AddProducts()">
+
+                <div class="form-group">
+                 <label for="productId">Product id:</label>
+                  <input type="number" name="aa" [(ngModel)]="productItem.productId"/>
+                </div> 
+
+               
+
+        
+              <div class="form-group">
+                <label for="productName">Product Name:</label>
+                <input type="text" name="ff" [(ngModel)]="productItem.productName"/>
+              </div>
+
+              <div class="form-group">
+                <label for="productCode">Code:</label>
+                <input type="text" name="hh" [(ngModel)]="productItem.productCode"/>
+              </div>
+              <div class="form-group">
+                  <label for="releaseDate">description:</label>
+                  <input type="text" name="ahh" [(ngModel)]="productItem.description"/>
+                </div>
+
+              <div class="form-group">
+                <label for="releaseDate">Available:</label>
+                <input type="text" name="af" [(ngModel)]="productItem.releaseDate"/>
+              </div>
+
+              <div class="form-group">
+                <label for="price">Price:</label>
+                <input type="number" name="aff" [(ngModel)]="productItem.price"/>
+              </div>
+
+              <div class="form-group">
+                <label for="starRating"> 5 Star Rating:</label>
+                <input type="number" name="gfa" [(ngModel)]="productItem.starRating"/>
+              </div>
+
+              <div class="form-group">
+                  <label for="image">image:</label>
+                  <input type="text" name="gfga" [(ngModel)]="productItem.imageUrl"/>
+                </div>
+
+
+            <button type="submit">Submit</button>
+            </form>
+         </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
